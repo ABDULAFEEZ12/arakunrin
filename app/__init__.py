@@ -10,7 +10,12 @@ import click
 from flask import Flask, g, render_template, request
 from werkzeug.middleware.proxy_fix import ProxyFix
 
-logger = logging.getLogger("konvexity")
+logger = logging.getLogger("arakunrin")
+
+# app/__init__.py lives inside the `app` package; PROJECT_ROOT is one level up,
+# where run.py, templates/, static/, migrations/, and logs/ actually live.
+BASE_DIR = os.path.abspath(os.path.dirname(__file__))
+PROJECT_ROOT = os.path.dirname(BASE_DIR)
 
 
 def create_app(config_name=None):
@@ -18,9 +23,9 @@ def create_app(config_name=None):
         config_name = os.environ.get("FLASK_CONFIG", "production")
 
     app = Flask(
-        "konvexity",
-        template_folder="templates",
-        static_folder="static",
+        __name__,
+        template_folder=os.path.join(PROJECT_ROOT, "templates"),
+        static_folder=os.path.join(PROJECT_ROOT, "static"),
         static_url_path="/static",
     )
 
@@ -41,7 +46,7 @@ def create_app(config_name=None):
         configure_production_logging(app)
 
     logger.info(
-        "Konvexity application created [config=%s, debug=%s, testing=%s]",
+        "ARÁKÙNRIN application created [config=%s, debug=%s, testing=%s]",
         config_name,
         app.config["DEBUG"],
         app.config.get("TESTING", False),
@@ -102,8 +107,8 @@ def configure_context_processors(app):
     @app.context_processor
     def inject_globals():
         return {
-            "site_name": "Konvexity",
-            "site_tagline": "Where Clarity Meets Growth",
+            "site_name": "ARÁKÙNRIN",
+            "site_tagline": "The Institute for Male Formation",
             "current_year": dt.datetime.now().year,
         }
 
@@ -111,15 +116,14 @@ def configure_context_processors(app):
     def inject_navigation():
         navigation = {
             "primary": [
-                {"label": "Home", "url": "/"},
-                {"label": "About", "url": "/about"},
-                {"label": "Solutions", "url": "/solutions"},
-                {"label": "Programs", "url": "/programs"},
-                {"label": "Faculty", "url": "/faculty"},
-                {"label": "Founder", "url": "/founder"},
-                {"label": "Clients", "url": "/clients"},
-                {"label": "Contact", "url": "/contact"},
-            ]
+                {"label": "Home", "url": "/", "endpoint": "public.home"},
+                {"label": "About", "url": "/about", "endpoint": "public.about"},
+                {"label": "Our Work", "url": "/our-work", "endpoint": "public.our_work"},
+                {"label": "The Gathering", "url": "/the-gathering", "endpoint": "public.gathering"},
+                {"label": "Gallery", "url": "/gallery", "endpoint": "public.gallery"},
+                {"label": "Partners", "url": "/partners", "endpoint": "public.partners"},
+            ],
+            "cta": {"label": "Enquire", "url": "/contact", "endpoint": "public.contact"},
         }
         return {"navigation": navigation}
 
@@ -131,7 +135,7 @@ def configure_security_headers(app):
             app,
             content_security_policy={
                 "default-src": "'self'",
-                "script-src": ["'self'", "'unsafe-inline'", "https://cdn.tailwindcss.com"],
+                "script-src": ["'self'", "'unsafe-inline'"],
                 "style-src": ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"],
                 "font-src": ["'self'", "https://fonts.gstatic.com"],
                 "img-src": ["'self'", "data:", "https:"],
@@ -181,7 +185,7 @@ def configure_production_logging(app):
     os.makedirs(log_dir, exist_ok=True)
 
     file_handler = RotatingFileHandler(
-        os.path.join(log_dir, "konvexity.log"),
+        os.path.join(log_dir, "arakunrin.log"),
         maxBytes=10_485_760,
         backupCount=10,
     )
@@ -193,4 +197,4 @@ def configure_production_logging(app):
 
     app.logger.addHandler(file_handler)
     app.logger.setLevel(logging.INFO)
-    app.logger.info("Konvexity production logging configured.")
+    app.logger.info("ARÁKÙNRIN production logging configured.")

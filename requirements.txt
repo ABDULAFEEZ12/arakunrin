@@ -1,7 +1,7 @@
 # =============================================================================
-# KONVEXITY — Python Dependencies
+# ARÁKÙNRIN — Python Dependencies
 # =============================================================================
-# Premium Leadership & Organizational Transformation Institution
+# Africa's Premier Institution for Lifelong Male Formation
 # Production-grade dependency specification with pinned versions
 # =============================================================================
 

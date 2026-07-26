@@ -1,33 +1,120 @@
+<!-- templates/public/blog.html -->
 {% extends "base.html" %}
 
+{% block title %}Insights | Konvexity{% endblock %}
+
 {% block content %}
-<div class="relative bg-deeper">
-<section class="relative pt-44 pb-24 md:pt-52 md:pb-32 bg-deep z-10">
-    <div class="relative max-w-7xl mx-auto px-6 lg:px-8">
-        <div class="max-w-4xl">
-            <p class="section-eyebrow lens-reveal">Insights</p>
-            <h1 class="heading-display mb-10 lens-reveal" data-delay="100" data-glow>Perspectives & Thought Leadership.</h1>
-            <p class="text-xl md:text-2xl text-gray-400 max-w-3xl leading-relaxed font-light lens-reveal" data-delay="250">
-                Insights from Konvexity's faculty on leadership, organizational transformation, and human performance.
+<section class="blog-hero">
+    <div class="container">
+        <div class="section-header fade-in">
+            <span class="section-label">Insights</span>
+            <h1 class="display-md mb-8">Ideas on leadership, systems, and transformation</h1>
+            <p class="section-description">
+                Thought leadership from our faculty on building better organizations, developing stronger leaders, and creating lasting impact.
             </p>
         </div>
     </div>
 </section>
 
-<div class="divider"></div>
-
-<section class="relative py-36 md:py-48 lg:py-56 bg-deeper z-10">
-    <div class="relative max-w-7xl mx-auto px-6 lg:px-8 text-center">
-        <div class="lens-reveal">
-            <div class="w-20 h-20 mx-auto mb-8 rounded-2xl bg-teal/[0.04] flex items-center justify-center text-teal/30">
-                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
-            </div>
-            <h2 class="heading-lg mb-4">Coming Soon</h2>
-            <p class="body-base max-w-md mx-auto">Our blog is being prepared with rigorously researched content from our faculty.</p>
+<section class="section" style="background: var(--color-midnight-elevated);">
+    <div class="container">
+        <div class="blog-grid">
+            <article class="blog-card fade-in stagger-delay-1">
+                <div class="blog-card-image"></div>
+                <div class="blog-card-body">
+                    <div class="blog-card-meta">
+                        <span>Leadership</span>
+                        <span>•</span>
+                        <span>Dec 15, 2024</span>
+                    </div>
+                    <h3 class="blog-card-title">Why Most Leadership Development Programs Fail (And How to Fix Them)</h3>
+                    <p class="blog-card-excerpt">
+                        The uncomfortable truth about leadership development and what actually drives lasting behavioral change.
+                    </p>
+                    <a href="#" class="service-card-link">Read more →</a>
+                </div>
+            </article>
+            
+            <article class="blog-card fade-in stagger-delay-2">
+                <div class="blog-card-image"></div>
+                <div class="blog-card-body">
+                    <div class="blog-card-meta">
+                        <span>Systems</span>
+                        <span>•</span>
+                        <span>Nov 28, 2024</span>
+                    </div>
+                    <h3 class="blog-card-title">The Hidden Cost of Broken Systems in Growing Organizations</h3>
+                    <p class="blog-card-excerpt">
+                        How fragmented systems silently erode performance and what leaders can do about it before it's too late.
+                    </p>
+                    <a href="#" class="service-card-link">Read more →</a>
+                </div>
+            </article>
+            
+            <article class="blog-card fade-in stagger-delay-3">
+                <div class="blog-card-image"></div>
+                <div class="blog-card-body">
+                    <div class="blog-card-meta">
+                        <span>Culture</span>
+                        <span>•</span>
+                        <span>Nov 10, 2024</span>
+                    </div>
+                    <h3 class="blog-card-title">Building a High-Performance Culture: Beyond Perks and Pizza</h3>
+                    <p class="blog-card-excerpt">
+                        What truly drives high-performance cultures and why most organizations get it wrong.
+                    </p>
+                    <a href="#" class="service-card-link">Read more →</a>
+                </div>
+            </article>
+            
+            <article class="blog-card fade-in stagger-delay-1">
+                <div class="blog-card-image"></div>
+                <div class="blog-card-body">
+                    <div class="blog-card-meta">
+                        <span>Strategy</span>
+                        <span>•</span>
+                        <span>Oct 22, 2024</span>
+                    </div>
+                    <h3 class="blog-card-title">Decision-Making Under Uncertainty: A Framework for Leaders</h3>
+                    <p class="blog-card-excerpt">
+                        How to make confident strategic decisions when the path forward isn't clear.
+                    </p>
+                    <a href="#" class="service-card-link">Read more →</a>
+                </div>
+            </article>
+            
+            <article class="blog-card fade-in stagger-delay-2">
+                <div class="blog-card-image"></div>
+                <div class="blog-card-body">
+                    <div class="blog-card-meta">
+                        <span>Leadership</span>
+                        <span>•</span>
+                        <span>Oct 5, 2024</span>
+                    </div>
+                    <h3 class="blog-card-title">The 5D Leadership Architecture: A New Model for African Leaders</h3>
+                    <p class="blog-card-excerpt">
+                        Introducing a leadership framework designed specifically for the unique challenges facing African organizations.
+                    </p>
+                    <a href="#" class="service-card-link">Read more →</a>
+                </div>
+            </article>
+            
+            <article class="blog-card fade-in stagger-delay-3">
+                <div class="blog-card-image"></div>
+                <div class="blog-card-body">
+                    <div class="blog-card-meta">
+                        <span>Transformation</span>
+                        <span>•</span>
+                        <span>Sep 18, 2024</span>
+                    </div>
+                    <h3 class="blog-card-title">From Hustle to Institution: The Transformation Journey</h3>
+                    <p class="blog-card-excerpt">
+                        What it really takes to move from informal, founder-dependent operations to a sustainable, scalable institution.
+                    </p>
+                    <a href="#" class="service-card-link">Read more →</a>
+                </div>
+            </article>
         </div>
     </div>
 </section>
-
-{% include 'components/cta_section.html' %}
-</div>
 {% endblock %}

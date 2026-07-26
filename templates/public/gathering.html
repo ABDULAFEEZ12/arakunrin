@@ -1,0 +1,122 @@
+{% extends "base.html" %}
+{% block title %}{{ seo.title }}{% endblock %}
+{% block content %}
+
+<!-- IMAGE: full-bleed silhouette of a man on a hilltop at golden hour —
+     the event's key art, low contrast, rich blacks. -->
+<section class="hero" style="min-height:80vh;">
+  <div class="hero__media">
+    <img src="{{ url_for('static', filename='images/gathering/hero.jpg') }}" alt="Silhouette of a man on a hilltop at golden hour — The Gathering 2026">
+  </div>
+  <div class="wrap hero__content">
+    <span class="kicker">The Gathering 2026</span>
+    <h1 data-reveal>The Weight of <span class="gold">a Man.</span></h1>
+    <p class="lede mt-1" data-reveal>An intimate experience of brotherhood, reflection &amp; formation.</p>
+    <div class="hero__actions" data-reveal>
+      <a href="{{ url_for('public.contact') }}" class="btn btn--gold">Register Today <span class="btn__arrow">&rarr;</span></a>
+    </div>
+  </div>
+</section>
+
+<div class="factstrip">
+  <div class="fact"><div class="fact__label">Date</div><div class="fact__value">27 September, 2026</div></div>
+  <div class="fact"><div class="fact__label">Time</div><div class="fact__value">3:00 PM &ndash; 8:30 PM</div></div>
+  <div class="fact"><div class="fact__label">Venue</div><div class="fact__value">RCCG Messiah&rsquo;s Place, Magboro, Ogun State</div></div>
+</div>
+
+<!-- ============================= REGISTER ============================= -->
+<section class="band">
+  <div class="wrap">
+    <div class="panel text-center" style="max-width:640px; margin:0 auto;" data-reveal>
+      <span class="kicker kicker--center">You Are Invited</span>
+      <h2>Register Today.</h2>
+      <p style="font-family:var(--display); color:var(--gold); font-size:1.15rem; margin-top:0.6rem;">Be part of a movement. Be part of a legacy.</p>
+      <a href="{{ url_for('public.contact') }}" class="btn btn--gold mt-2">Register Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= THE WEIGHT / MEN / LEGACIES ============================= -->
+<section class="band band--navy2">
+  <div class="wrap">
+    <div class="head head--center" data-reveal>
+      <span class="kicker kicker--center">The Gathering 2026</span>
+      <h2>The Weight We Carry. The Men We Form. The Legacies We Build.</h2>
+    </div>
+    <div class="pillars" data-reveal>
+      <div class="pillar">
+        <span class="pillar__num">01</span>
+        <div><span class="pillar__name">The Weight We Carry</span><span class="pillar__sub">Family &middot; Purpose &middot; Leadership &middot; Legacy</span></div>
+        <p class="pillar__desc">We carry much. We&rsquo;re built for much.</p>
+      </div>
+      <div class="pillar">
+        <span class="pillar__num">02</span>
+        <div><span class="pillar__name">The Men We Form</span><span class="pillar__sub">Character &middot; Capacity &middot; Conviction &middot; Community</span></div>
+        <p class="pillar__desc">Formation reshapes impact, today and tomorrow.</p>
+      </div>
+      <div class="pillar">
+        <span class="pillar__num">03</span>
+        <div><span class="pillar__name">The Legacies We Build</span><span class="pillar__sub">Not For Ourselves</span></div>
+        <p class="pillar__desc">Not for ourselves, but for today, and for the generations to come.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= SPEAKER ============================= -->
+<!-- IMAGE: portrait of Tobi Ashimolowo, native attire, reflective pose. -->
+<section class="band">
+  <div class="wrap">
+    <div class="split" data-reveal>
+      <div class="split__media">
+        <img src="{{ url_for('static', filename='images/gathering/speaker-tobi-ashimolowo.jpg') }}" alt="Portrait of Tobi Ashimolowo, native attire, reflective pose">
+      </div>
+      <div class="split__copy">
+        <span class="kicker">Speaker Announcement</span>
+        <h2>Tobi Ashimolowo</h2>
+        <p class="lede mt-1">Session: The Burden, Beauty and Calling of Masculinity.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= PROGRAMME ============================= -->
+<section class="band band--navy2">
+  <div class="wrap">
+    <div class="head" data-reveal>
+      <span class="kicker">Programme Overview</span>
+      <h2>Daily Programme</h2>
+    </div>
+    <div class="timeline" data-reveal>
+      <div class="timeline__row"><div class="timeline__time">3:00 PM</div><div class="timeline__title">Arrival &amp; Registration</div></div>
+      <div class="timeline__row"><div class="timeline__time">3:30 PM</div><div class="timeline__title">Brotherhood Connect</div></div>
+      <div class="timeline__row"><div class="timeline__time">&mdash;</div><div class="timeline__title">Opening &amp; Worship</div></div>
+      <div class="timeline__row"><div class="timeline__time">&mdash;</div><div class="timeline__title">Fireside Chat</div></div>
+      <div class="timeline__row"><div class="timeline__time">8:30 PM</div><div class="timeline__title">Commissioning &amp; Closing</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= QUOTE ============================= -->
+<section class="band">
+  <div class="wrap">
+    <div class="pullquote" data-reveal>
+      <span class="pullquote__mark">&ldquo;</span>
+      <p class="pullquote__text">A man who carries purpose will never be crushed by pressure.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= SPONSOR APPRECIATION ============================= -->
+<section class="band band--navy2">
+  <div class="wrap">
+    <div class="panel text-center" style="max-width:640px; margin:0 auto;" data-reveal>
+      <span class="kicker kicker--center">Thank You to Our Partners</span>
+      <p style="margin-top:0.8rem;">Your support is building men, strengthening families, and transforming nations.</p>
+    </div>
+  </div>
+</section>
+
+{% include 'components/cta_section.html' %}
+
+{% endblock %}

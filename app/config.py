@@ -5,7 +5,7 @@ from decouple import Csv, config
 
 
 class BaseConfig:
-    SECRET_KEY = config("SECRET_KEY", default="konvexity-development-secret-change-in-production")
+    SECRET_KEY = config("SECRET_KEY", default="arakunrin-development-secret-change-in-production")
 
     BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 
@@ -29,7 +29,7 @@ class BaseConfig:
     MAIL_USE_SSL = config("MAIL_USE_SSL", default=False, cast=bool)
     MAIL_USERNAME = config("MAIL_USERNAME", default="")
     MAIL_PASSWORD = config("MAIL_PASSWORD", default="")
-    MAIL_DEFAULT_SENDER = config("MAIL_DEFAULT_SENDER", default="Konvexity <hello@konvexity.com>")
+    MAIL_DEFAULT_SENDER = config("MAIL_DEFAULT_SENDER", default="ARÁKÙNRIN <hello@arakunrin.org>")
     MAIL_DEBUG = False
 
     RATELIMIT_ENABLED = True
@@ -62,7 +62,7 @@ class DevelopmentConfig(BaseConfig):
     DEBUG = True
     SQLALCHEMY_DATABASE_URI = config(
         "DEV_DATABASE_URL",
-        default="sqlite:///" + os.path.join(BaseConfig.BASE_DIR, "konvexity_dev.db")
+        default="sqlite:///" + os.path.join(BaseConfig.BASE_DIR, "arakunrin_dev.db")
     )
     SESSION_COOKIE_SECURE = False
     REMEMBER_COOKIE_SECURE = False
@@ -84,7 +84,7 @@ class TestingConfig(BaseConfig):
 class ProductionConfig(BaseConfig):
     SQLALCHEMY_DATABASE_URI = config(
         "DATABASE_URL",
-        default="sqlite:///" + os.path.join(BaseConfig.BASE_DIR, "konvexity_prod.db")
+        default="sqlite:///" + os.path.join(BaseConfig.BASE_DIR, "arakunrin_prod.db")
     )
     SECRET_KEY = config("SECRET_KEY")
     MAIL_DEBUG = False

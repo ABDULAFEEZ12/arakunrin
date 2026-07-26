@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% block title %}{{ seo.title }}{% endblock %}
+{% block content %}
+
+<section class="band band--tight" style="padding-top: clamp(8rem, 14vw, 11rem);">
+  <div class="wrap">
+    <span class="kicker">Legacy One</span>
+    <h1 data-reveal>Partnering Today, <span class="gold">Building Tomorrow.</span></h1>
+    <p class="lede mt-2" data-reveal>Your support is building men, strengthening families, and transforming nations.</p>
+  </div>
+</section>
+
+<div class="rule"></div>
+
+<!-- ============================= WHY PARTNER ============================= -->
+<!-- IMAGE: institutional partnership scene — men seated in conversation,
+     premium interior, warm natural light, no corporate handshake cliché. -->
+<section class="band">
+  <div class="wrap">
+    <div class="split" data-reveal>
+      <div class="split__media">
+        <img src="{{ url_for('static', filename='images/partners/legacy-one.jpg') }}" alt="African men in institutional conversation, premium interior, warm light">
+      </div>
+      <div class="split__copy">
+        <span class="kicker">Legacy Over Success</span>
+        <h2>Nation Building Begins With <span class="gold">Man Building.</span></h2>
+        <p class="lede mt-1">Institutions, churches, and organisations partner with ARÁKÙNRIN in generational work &mdash; impact, generational transfer, and nation building.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= WHAT PARTNERSHIP CARRIES ============================= -->
+<section class="band band--navy2">
+  <div class="wrap">
+    <div class="head head--center" data-reveal>
+      <span class="kicker kicker--center">What Partnership Carries</span>
+      <h2>Family. Nation. Trust.</h2>
+    </div>
+    <div class="pillars" data-reveal>
+      <div class="pillar">
+        <span class="pillar__num">01</span>
+        <div><span class="pillar__name">Nation Building</span></div>
+        <p class="pillar__desc">Nation building begins with man building. Our partners share in this generational work.</p>
+      </div>
+      <div class="pillar">
+        <span class="pillar__num">02</span>
+        <div><span class="pillar__name">Family Strength</span></div>
+        <p class="pillar__desc">Formation extends beyond the individual man to the families and communities he leads.</p>
+      </div>
+      <div class="pillar">
+        <span class="pillar__num">03</span>
+        <div><span class="pillar__name">Institutional Trust</span></div>
+        <p class="pillar__desc">Confidentiality is a matter of institutional discipline. Named partnerships are shared with consent.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= LEGACY ONE CARD ============================= -->
+<section class="band">
+  <div class="wrap">
+    <div class="panel text-center" style="max-width:640px; margin:0 auto;" data-reveal>
+      <span class="kicker kicker--center">Legacy One Partnership</span>
+      <p style="font-family:var(--display); font-size:1.2rem; color:var(--ivory); margin-top:0.6rem;">Partnering Today, Building Tomorrow.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= THANK YOU ============================= -->
+<section class="band band--navy2">
+  <div class="wrap">
+    <div class="pullquote" data-reveal>
+      <span class="pullquote__mark">&ldquo;</span>
+      <p class="pullquote__text">Thank you to our partners. Your support is building men, strengthening families, and transforming nations.</p>
+    </div>
+  </div>
+</section>
+
+{% include 'components/cta_section.html' %}
+
+{% endblock %}

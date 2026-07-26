@@ -22,7 +22,7 @@ logging.basicConfig(
     stream=sys.stdout,
 )
 
-logger = logging.getLogger("konvexity")
+logger = logging.getLogger("arakunrin")
 logging.getLogger("sqlalchemy.engine").setLevel(logging.WARNING)
 logging.getLogger("urllib3").setLevel(logging.WARNING)
 
@@ -30,8 +30,8 @@ from app import create_app
 
 config_name = env_config("FLASK_CONFIG", default="production")
 
-logger.info("Bootstrapping Konvexity application with config: %s", config_name)
+logger.info("Bootstrapping ARÁKÙNRIN application with config: %s", config_name)
 
 application = create_app(config_name=config_name)
 
-logger.info("Konvexity application initialized successfully.")
+logger.info("ARÁKÙNRIN application initialized successfully.")

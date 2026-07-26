@@ -1,13 +1,10 @@
 {
-  "name": "konvexity",
+  "name": "arakunrin",
   "version": "1.0.0",
   "private": true,
-  "description": "Konvexity - Where Clarity Meets Growth",
+  "description": "ARÁKÙNRIN — The Institute for Male Formation",
   "scripts": {
-    "build:css": "tailwindcss -i ./app/static/css/tailwind.src.css -o ./app/static/css/tailwind.css --minify",
-    "watch:css": "tailwindcss -i ./app/static/css/tailwind.src.css -o ./app/static/css/tailwind.css --watch"
+    "build:css": "echo 'No build step required — static/css/custom.css is hand-authored, not Tailwind-generated.'"
   },
-  "devDependencies": {
-    "tailwindcss": "^3.4.0"
-  }
+  "devDependencies": {}
 }
