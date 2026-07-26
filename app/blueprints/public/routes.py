@@ -21,7 +21,7 @@ def _seo(endpoint, title, description, **url_kwargs):
 def home():
     seo = _seo(
         "public.home",
-        "ARÁKÙNRIN — The Institute for Male Formation",
+        "ARÁKÙNRIN | The Institute for Male Formation",
         "Africa's premier institution for lifelong male formation. Forming Boys. Forging Men. Building Legacies.",
     )
     return render_template("public/home.html", seo=seo)
@@ -31,7 +31,7 @@ def home():
 def about():
     seo = _seo(
         "public.about",
-        "About — ARÁKÙNRIN",
+        "About | ARÁKÙNRIN",
         "To intentionally form boys and men into leaders of character, conviction, competence and legacy.",
     )
     return render_template("public/about.html", seo=seo)
@@ -41,8 +41,8 @@ def about():
 def our_work():
     seo = _seo(
         "public.our_work",
-        "Our Work — ARÁKÙNRIN",
-        "BTMT, the core ARÁKÙNRIN formation track, and Legacy One — beyond events, towards formation.",
+        "Our Work | ARÁKÙNRIN",
+        "BTMT (Boys Today. Men Tomorrow.) and ARÁKÙNRIN, two complementary pathways, one lifelong journey of intentional male formation.",
     )
     return render_template("public/our_work.html", seo=seo)
 
@@ -51,8 +51,8 @@ def our_work():
 def gathering():
     seo = _seo(
         "public.gathering",
-        "The Gathering 2026 — ARÁKÙNRIN",
-        "The Gathering 2026 — The Weight of a Man. An intimate experience of brotherhood, reflection & formation. 27 September 2026, RCCG Messiah's Place, Magboro.",
+        "The Gathering 2026 | ARÁKÙNRIN",
+        "The Gathering 2026, The Weight of a Man. An intimate experience of brotherhood, reflection and formation. 27 September 2026, The RCCG Messiah's Place, Magboro, Ogun State.",
     )
     return render_template("public/gathering.html", seo=seo)
 
@@ -61,8 +61,8 @@ def gathering():
 def gallery():
     seo = _seo(
         "public.gallery",
-        "Gallery — ARÁKÙNRIN",
-        "Photography direction and the Gathering 2026 collateral system — the visual language of ARÁKÙNRIN.",
+        "Gallery | ARÁKÙNRIN",
+        "Photography direction and the Gathering 2026 collateral system, the visual language of ARÁKÙNRIN.",
     )
     return render_template("public/gallery.html", seo=seo)
 
@@ -71,8 +71,8 @@ def gallery():
 def partners():
     seo = _seo(
         "public.partners",
-        "Partners — ARÁKÙNRIN",
-        "Legacy One. Partnering today, building tomorrow. Your support is building men, strengthening families, and transforming nations.",
+        "Founding Partners | ARÁKÙNRIN",
+        "Become a Founding Builder of a movement. Founding Partners won't simply sponsor an event, they will help shape a generation.",
     )
     return render_template("public/partners.html", seo=seo)
 
@@ -81,8 +81,8 @@ def partners():
 def contact():
     seo = _seo(
         "public.contact",
-        "Contact — ARÁKÙNRIN",
-        "Begin the enquiry. Not another conference. A beginning.",
+        "Contact | ARÁKÙNRIN",
+        "Not another conference. Not another mentorship programme. Not another men's movement. An institution dedicated to lifelong male formation.",
     )
     if request.method == "POST":
         name = request.form.get("name", "").strip()
@@ -97,7 +97,7 @@ def contact():
 
 
 # ---------------------------------------------------------------------------
-# Legacy Konvexity URLs — redirected (not 404s) in case anything external
+# Legacy Konvexity URLs, redirected (not 404s) in case anything external
 # still links to the old paths. Remove once you're confident nothing does.
 # ---------------------------------------------------------------------------
 

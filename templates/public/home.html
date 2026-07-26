@@ -5,7 +5,7 @@
 {% block content %}
 
 <!-- ============================= HERO ============================= -->
-<!-- IMAGE: full-bleed cinematic photo — a lone African man in native attire
+<!-- IMAGE: full-bleed cinematic photo, a lone African man in native attire
      (agbada or kaftan) standing in reflection at golden hour, rich shadow,
      natural light. This is the single most important image on the site. -->
 <section class="hero">
@@ -14,7 +14,7 @@
   </div>
   <div class="wrap hero__content">
     <span class="kicker">The Institute for Male Formation</span>
-    <h1 data-reveal>Africa&rsquo;s Premier Institution for Lifelong Male Formation.</h1>
+    <h1 data-reveal>Africa's Premier Institution for Lifelong Male Formation.</h1>
     <p class="lede mt-2" data-reveal>To intentionally form boys and men into leaders of character, conviction, competence and legacy.</p>
     <div class="hero__actions" data-reveal>
       <a href="{{ url_for('public.contact') }}" class="btn btn--gold">Begin the Enquiry <span class="btn__arrow">&rarr;</span></a>
@@ -27,112 +27,128 @@
   <div class="scroll-cue"><span>Scroll</span><span class="scroll-cue__line"></span></div>
 </section>
 
-<!-- ============================= BRAND ESSENCE ============================= -->
+<!-- ============================= THE CASE FOR ACTION ============================= -->
+<section class="band">
+  <div class="wrap">
+    <div class="head head--center" data-reveal>
+      <span class="kicker kicker--center">The Case for Action</span>
+      <h2>The Data Behind the Need</h2>
+      <p class="lede" style="margin-inline:auto;">The evidence is clear: boys and men are facing a formation challenge with far-reaching consequences for families, organizations and society.</p>
+    </div>
+    <div class="stats" data-reveal>
+      <div class="stat">
+        <div class="stat__label">Education</div>
+        <p class="stat__desc">Boys are more likely than girls to fall behind in school.</p>
+      </div>
+      <div class="stat">
+        <div class="stat__figure">75%</div>
+        <div class="stat__label">Mental Health</div>
+        <p class="stat__desc">Of global suicide deaths are men.</p>
+      </div>
+      <div class="stat">
+        <div class="stat__figure">~93%</div>
+        <div class="stat__label">Crime &amp; Violence</div>
+        <p class="stat__desc">Of the world's prison population is male.</p>
+      </div>
+      <div class="stat">
+        <div class="stat__label">Fatherhood</div>
+        <p class="stat__desc">Children with actively involved fathers experience better educational, emotional and behavioural outcomes.</p>
+      </div>
+      <div class="stat">
+        <div class="stat__label">Leadership</div>
+        <p class="stat__desc">Leadership, resilience, emotional intelligence and lifelong learning are among the fastest-growing workplace capabilities.</p>
+      </div>
+    </div>
+    <p class="text-center mt-3" style="font-family:var(--display); font-size:clamp(1.2rem, 2vw, 1.6rem); color:var(--ivory);" data-reveal>The challenge is not a lack of potential. It is a lack of intentional formation.</p>
+  </div>
+</section>
+
+<div class="rule"></div>
+
+<!-- ============================= WHY MALE FORMATION MATTERS ============================= -->
 <!-- IMAGE: two African men, mentor and mentee, in quiet conversation,
      traditional caps, soft shadow, warm tone. -->
-<section class="band">
+<section class="band band--navy2">
   <div class="wrap">
     <div class="split" data-reveal>
       <div class="split__media">
         <img src="{{ url_for('static', filename='images/home/mentorship.jpg') }}" alt="A mentor and a younger man in quiet conversation, traditional caps, warm light">
       </div>
       <div class="split__copy">
-        <span class="kicker">Forming Boys. Forging Men. Building Legacies.</span>
-        <h2>Not Trendy. Not Loud. <span class="gold">Not Youthful.</span></h2>
-        <p class="lede mt-1">ARÁKÙNRIN is noble, masculine, timeless, African, intellectual, spiritual, premium, intentional, hopeful and transformational.</p>
-        <p class="mt-1">Think Harvard. Rolex. The King&rsquo;s Trust. Oxford. Rather than Nike. Red Bull. TED.</p>
+        <span class="kicker">Why Male Formation Matters</span>
+        <h2>Stronger Men Build <span class="gold">Stronger Societies.</span></h2>
+        <p class="lede mt-1">Every society reflects the quality of the men it produces. When boys are intentionally formed, the benefits extend far beyond the individual.</p>
+        <p class="mt-2" style="font-family:var(--display); font-size:1.2rem; color:var(--ivory);">Male formation is not a men's issue. It is a societal issue.</p>
       </div>
     </div>
   </div>
 </section>
 
-<div class="rule"></div>
-
-<!-- ============================= PILLARS ============================= -->
-<section class="band band--navy2">
+<!-- ============================= THE RIPPLE EFFECT ============================= -->
+<section class="band">
   <div class="wrap">
     <div class="head head--center" data-reveal>
-      <span class="kicker kicker--center">Brand Pillars</span>
-      <h2>Every Formation Reinforces These Five Pillars</h2>
+      <span class="kicker kicker--center">The Ripple Effect</span>
+      <h2>One Formed Man. Multiple Generations, Endless Possibilities.</h2>
     </div>
-    <div class="pillars" data-reveal>
-      <div class="pillar">
-        <span class="pillar__num">01</span>
-        <div><span class="pillar__name">Character</span><span class="pillar__sub">The Foundation</span></div>
-        <p class="pillar__desc">Integrity. Discipline. Honor.</p>
-      </div>
-      <div class="pillar">
-        <span class="pillar__num">02</span>
-        <div><span class="pillar__name">Capacity</span><span class="pillar__sub">The Standard</span></div>
-        <p class="pillar__desc">Leadership. Excellence. Competence.</p>
-      </div>
-      <div class="pillar">
-        <span class="pillar__num">03</span>
-        <div><span class="pillar__name">Brotherhood</span><span class="pillar__sub">The Bond</span></div>
-        <p class="pillar__desc">Community. Mentorship. Belonging.</p>
-      </div>
-      <div class="pillar">
-        <span class="pillar__num">04</span>
-        <div><span class="pillar__name">Legacy</span><span class="pillar__sub">The Purpose</span></div>
-        <p class="pillar__desc">Impact. Generational transfer. Nation building.</p>
-      </div>
-      <div class="pillar">
-        <span class="pillar__num">05</span>
-        <div><span class="pillar__name">Formation</span><span class="pillar__sub">The Method</span></div>
-        <p class="pillar__desc">Not inspiration. Transformation.</p>
-      </div>
+    <div class="chain" data-reveal>
+      <div class="chain__link"><div class="chain__name">The Man</div><p class="chain__desc">He becomes a better man.</p></div>
+      <div class="chain__link"><div class="chain__name">The Family</div><p class="chain__desc">He becomes a better husband and father.</p></div>
+      <div class="chain__link"><div class="chain__name">Community of Faith</div><p class="chain__desc">He strengthens his community of faith.</p></div>
+      <div class="chain__link"><div class="chain__name">The Workplace</div><p class="chain__desc">He leads with integrity and excellence.</p></div>
+      <div class="chain__link"><div class="chain__name">The Community</div><p class="chain__desc">He contributes to stronger communities.</p></div>
+      <div class="chain__link"><div class="chain__name">The Nation</div><p class="chain__desc">He helps build a better future for our nation.</p></div>
     </div>
   </div>
 </section>
 
 <!-- ============================= THE GATHERING ============================= -->
-<!-- IMAGE: wide cinematic shot — silhouette of a man on a hilltop at
+<!-- IMAGE: wide cinematic shot, silhouette of a man on a hilltop at
      golden hour, low contrast, rich blacks. Matches event key art. -->
-<section class="band">
+<section class="band band--navy2">
   <div class="wrap">
     <div class="split split--reverse" data-reveal>
       <div class="split__media split__media--wide">
-        <img src="{{ url_for('static', filename='images/home/the-gathering.jpg') }}" alt="Silhouette of a man on a hilltop at golden hour — The Gathering 2026 key art">
+        <img src="{{ url_for('static', filename='images/home/the-gathering.jpg') }}" alt="Silhouette of a man on a hilltop at golden hour, The Gathering 2026 key art">
       </div>
       <div class="split__copy">
         <span class="kicker">One Gathering. A Lifetime of Formation.</span>
-        <h2>The Gathering 2026 <span class="gold">— The Weight of a Man</span></h2>
-        <p class="lede mt-1">An intimate experience of brotherhood, reflection &amp; formation.</p>
+        <h2>The Gathering 2026 <span class="gold">(The Weight of a Man)</span></h2>
+        <p class="lede mt-1">An intimate experience of brotherhood, reflection and formation.</p>
         <a href="{{ url_for('public.gathering') }}" class="btn btn--line mt-2">View The Gathering <span class="btn__arrow">&rarr;</span></a>
       </div>
     </div>
   </div>
   <div class="factstrip mt-3" data-reveal>
-    <div class="fact"><div class="fact__label">Date</div><div class="fact__value">27 Sept, 2026</div></div>
-    <div class="fact"><div class="fact__label">Time</div><div class="fact__value">3:00 PM &ndash; 8:30 PM</div></div>
-    <div class="fact"><div class="fact__label">Venue</div><div class="fact__value">RCCG Messiah&rsquo;s Place, Magboro</div></div>
+    <div class="fact"><div class="fact__label">Date</div><div class="fact__value">27 September, 2026</div></div>
+    <div class="fact"><div class="fact__label">Time</div><div class="fact__value">3:00 PM to 8:00 PM</div></div>
+    <div class="fact"><div class="fact__label">Venue</div><div class="fact__value">The RCCG Messiah's Place, Magboro</div></div>
   </div>
 </section>
 
-<!-- ============================= STATEMENT WALL ============================= -->
-<section class="band band--navy2">
+<!-- ============================= OUR CONVICTION ============================= -->
+<section class="band">
   <div class="wrap">
     <div class="head head--center" data-reveal>
-      <span class="kicker kicker--center">Signature Statements</span>
-      <h2>Already Established. Used Repeatedly.</h2>
+      <span class="kicker kicker--center">Our Conviction</span>
+      <h2>Great Men Are Not Born. They Are Intentionally Formed.</h2>
     </div>
     <div class="wall" data-reveal>
-      <div class="wall__line"><span>Forming Boys. Forging Men. Building Legacies.</span></div>
-      <div class="wall__line"><span>One Gathering. A Lifetime of Formation.</span></div>
-      <div class="wall__line"><span>Beyond Events. Towards Formation.</span></div>
-      <div class="wall__line"><span>The Weight of a Man.</span></div>
-      <div class="wall__line"><span>Not Another Conference. A Beginning.</span></div>
+      <div class="wall__line"><span>Not another conference.</span></div>
+      <div class="wall__line"><span>Not another mentorship programme.</span></div>
+      <div class="wall__line"><span>Not another men's movement.</span></div>
     </div>
+    <p class="text-center mt-3 lede" style="margin-inline:auto;" data-reveal>An institution dedicated to lifelong male formation.</p>
   </div>
 </section>
 
 <!-- ============================= VOICE ============================= -->
-<section class="band">
+<section class="band band--navy2">
   <div class="wrap">
     <div class="pullquote" data-reveal>
       <span class="pullquote__mark">&ldquo;</span>
-      <p class="pullquote__text">The future of a nation is shaped by the quality of its men.</p>
-      <div class="pullquote__attr">The Voice of ARÁKÙNRIN</div>
+      <p class="pullquote__text">We are not simply preparing men for success. We are preparing them for significance.</p>
+      <div class="pullquote__attr">Forming Men. Strengthening Society. Transforming Generations.</div>
     </div>
   </div>
 </section>

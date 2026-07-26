@@ -1,9 +1,52 @@
-venv/ 
-__pycache__/ 
-*.pyc 
-*.pyo 
-.env 
-instance/ 
-*.db 
-logs/ 
-.DS_Store 
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# --- Virtual environments ---
+venv/
+env/
+.venv/
+ENV/
+
+# --- Environment / secrets ---
+.env
+.env.*
+!.env.example
+
+# --- Flask / instance data ---
+instance/
+*.db
+*.sqlite
+*.sqlite3
+
+# --- Migrations working files (keep migrations/versions, ignore generated caches if any) ---
+# (leave migrations/ tracked — do not ignore it)
+
+# --- Logs ---
+logs/
+*.log
+
+# --- Uploads (user-generated content shouldn't live in git) ---
+app/static/uploads/
+
+# --- Node / Tailwind (unused in this version, harmless to ignore if reintroduced) ---
+node_modules/
+
+# --- OS / editor cruft ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# --- Testing ---
+.pytest_cache/
+.coverage
+htmlcov/

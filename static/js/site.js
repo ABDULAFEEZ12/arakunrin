@@ -1,8 +1,8 @@
 /* static/js/site.js
-   ARÁKÙNRIN — site-wide interaction layer.
+   ARÁKÙNRIN : site-wide interaction layer.
    Handles: sticky nav scroll state, mobile menu, scroll-reveal
    animations, and a lightweight lightbox for the Gallery page.
-   Minimal by design — per the Brand Guide's "minimal animation"
+   Minimal by design : per the Brand Guide's "minimal animation"
    direction for the digital experience.
 */
 (function () {
@@ -11,7 +11,7 @@
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   /* ---------------------------------------------------------
-     1. Sticky nav — adds .is-scrolled past a small threshold
+     1. Sticky nav : adds .is-scrolled past a small threshold
      --------------------------------------------------------- */
   function initNav() {
     var nav = document.querySelector(".nav");
@@ -67,7 +67,7 @@
   }
 
   /* ---------------------------------------------------------
-     3. Scroll reveal — [data-reveal] fades up once in view
+     3. Scroll reveal : [data-reveal] fades up once in view
      --------------------------------------------------------- */
   function initReveal() {
     var targets = document.querySelectorAll("[data-reveal]");
@@ -93,7 +93,7 @@
   }
 
   /* ---------------------------------------------------------
-     4. Gallery lightbox — click a .gallery__item to enlarge
+     4. Gallery lightbox : click a .gallery__item to enlarge
      --------------------------------------------------------- */
   function initLightbox() {
     var items = document.querySelectorAll(".gallery__item[data-lightbox]");
