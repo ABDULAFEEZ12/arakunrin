@@ -36,6 +36,46 @@
   </div>
 </section>
 
+<!-- ============================= COUNTDOWN ============================= -->
+<section class="band">
+  <div class="wrap">
+    <div class="head head--center" data-reveal>
+      <span class="kicker kicker--center">Save the Date</span>
+      <h2>The Gathering Begins In</h2>
+      <p class="lede" style="margin-inline:auto;">Join hundreds of purpose-driven men for a transformational leadership experience.</p>
+    </div>
+
+    <p class="sr-only">Counting down to The Gathering 2026 on 27 September 2026 at 3:00 PM, West Africa Time.</p>
+
+    <div class="countdown" id="cd-cards" role="timer" aria-label="Countdown to The Gathering 2026" data-reveal>
+      <div class="countdown__card">
+        <span class="countdown__value" id="cd-days">00</span>
+        <span class="countdown__label">Days</span>
+      </div>
+      <div class="countdown__card">
+        <span class="countdown__value" id="cd-hours">00</span>
+        <span class="countdown__label">Hours</span>
+      </div>
+      <div class="countdown__card">
+        <span class="countdown__value" id="cd-minutes">00</span>
+        <span class="countdown__label">Minutes</span>
+      </div>
+      <div class="countdown__card">
+        <span class="countdown__value" id="cd-seconds">00</span>
+        <span class="countdown__label">Seconds</span>
+      </div>
+    </div>
+
+    <p class="countdown__ended text-center" id="cd-ended" style="display:none;">The Gathering has begun.</p>
+
+    <div class="text-center mt-3" data-reveal>
+      <a href="https://forms.gle/kbDFdKUQMAGGjxjB6" class="btn btn--gold" target="_blank" rel="noopener noreferrer">
+        Register for The Gathering <span class="btn__arrow">&rarr;</span>
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- ============================= REGISTER ============================= -->
 <section class="band band--navy2">
   <div class="wrap">
@@ -178,4 +218,8 @@
 
 {% include 'components/cta_section.html' %}
 
+{% endblock %}
+
+{% block extra_scripts %}
+<script src="{{ url_for('static', filename='js/countdown.js') }}" defer></script>
 {% endblock %}
