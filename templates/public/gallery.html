@@ -10,126 +10,46 @@
   </div>
 </section>
 
-<!-- ============================= MOOD / SUBJECTS / WARDROBE / LIGHTING ============================= -->
-<section class="band--tight">
+<div class="rule"></div>
+
+<!-- ============================= PHOTOGRAPHIC GALLERY ============================= -->
+<!-- IMAGES: brotherhood-circle.jpg, mentor-and-boy.jpg, solitary-reflection.jpg,
+     multigenerational.jpg, leadership.jpg -->
+<section class="band">
   <div class="wrap">
-    <div class="type-sample" data-reveal>
-      <span class="type-sample__label">Subjects</span>
-      <div class="badge-row"><span class="tag">African Men</span><span class="tag">African Boys</span><span class="tag">Multiple Generations</span><span class="tag">Mentorship</span><span class="tag">Reflection</span><span class="tag">Leadership</span><span class="tag">Prayer</span><span class="tag">Conversation</span><span class="tag">Brotherhood</span></div>
-    </div>
-    <div class="type-sample" data-reveal>
-      <span class="type-sample__label">Wardrobe</span>
-      <div class="badge-row"><span class="tag">Native Attire</span><span class="tag">Agbada</span><span class="tag">Senator Wear</span><span class="tag">Kaftan</span><span class="tag">Isi Agu</span><span class="tag">Traditional Caps</span></div>
-    </div>
-    <div class="type-sample" data-reveal>
-      <span class="type-sample__label">Mood</span>
-      <div class="badge-row"><span class="tag">Warm</span><span class="tag">Reflective</span><span class="tag">Masculine</span><span class="tag">Premium</span><span class="tag">Natural</span></div>
-    </div>
-    <div class="type-sample" data-reveal>
-      <span class="type-sample__label">Lighting</span>
-      <div class="badge-row"><span class="tag">Golden Hour</span><span class="tag">Low Contrast</span><span class="tag">Natural</span><span class="tag">Soft Shadows</span><span class="tag">Rich Blacks</span></div>
+    <div class="gallery" data-reveal>
+      <div class="gallery__item gallery__item--wide" data-lightbox="{{ url_for('static', filename='images/gallery/brotherhood-circle.jpg') }}">
+        <img src="{{ url_for('static', filename='images/gallery/brotherhood-circle.jpg') }}" alt="Brotherhood">
+        <span class="gallery__caption">Brotherhood</span>
+      </div>
+      <div class="gallery__item gallery__item--tall" data-lightbox="{{ url_for('static', filename='images/gallery/mentor-and-boy.jpg') }}">
+        <img src="{{ url_for('static', filename='images/gallery/mentor-and-boy.jpg') }}" alt="Mentorship">
+        <span class="gallery__caption">Mentorship</span>
+      </div>
+      <div class="gallery__item gallery__item--sq" data-lightbox="{{ url_for('static', filename='images/gallery/solitary-reflection.jpg') }}">
+        <img src="{{ url_for('static', filename='images/gallery/solitary-reflection.jpg') }}" alt="Reflection">
+        <span class="gallery__caption">Reflection</span>
+      </div>
+      <div class="gallery__item gallery__item--full" data-lightbox="{{ url_for('static', filename='images/gallery/multigenerational.jpg') }}">
+        <img src="{{ url_for('static', filename='images/gallery/multigenerational.jpg') }}" alt="Legacy">
+        <span class="gallery__caption">Legacy</span>
+      </div>
+      <div class="gallery__item gallery__item--wide" data-lightbox="{{ url_for('static', filename='images/gallery/leadership.jpg') }}">
+        <img src="{{ url_for('static', filename='images/gallery/leadership.jpg') }}" alt="Leadership">
+        <span class="gallery__caption">Leadership</span>
+      </div>
     </div>
   </div>
 </section>
 
 <div class="rule"></div>
 
-<!-- ============================= PHOTOGRAPHIC GALLERY ============================= -->
-<!-- IMAGES: this masonry grid is the site's photography showcase.
-     Each cell below is one cinematic, golden-hour African photograph:
-     the subject noted in its alt text and caption. No stock photography. -->
-<section class="band">
-  <div class="wrap">
-    <div class="head head--center" data-reveal>
-      <span class="kicker kicker--center">In Formation</span>
-      <h2>Brotherhood. Mentorship. Reflection. Legacy.</h2>
-    </div>
-    <div class="gallery" data-reveal>
-      <div class="gallery__item gallery__item--wide" data-lightbox="{{ url_for('static', filename='images/gallery/brotherhood-circle.jpg') }}">
-        <img src="{{ url_for('static', filename='images/gallery/brotherhood-circle.jpg') }}" alt="A circle of African men in native attire in conversation, golden hour">
-        <span class="gallery__caption">Brotherhood</span>
-      </div>
-      <div class="gallery__item gallery__item--tall" data-lightbox="{{ url_for('static', filename='images/gallery/mentor-and-boy.jpg') }}">
-        <img src="{{ url_for('static', filename='images/gallery/mentor-and-boy.jpg') }}" alt="An older man mentoring a boy, traditional cap, soft shadow">
-        <span class="gallery__caption">Mentorship</span>
-      </div>
-      <div class="gallery__item gallery__item--sq" data-lightbox="{{ url_for('static', filename='images/gallery/solitary-reflection.jpg') }}">
-        <img src="{{ url_for('static', filename='images/gallery/solitary-reflection.jpg') }}" alt="A man alone in reflection, rich blacks, low contrast">
-        <span class="gallery__caption">Reflection</span>
-      </div>
-      <div class="gallery__item gallery__item--sq" data-lightbox="{{ url_for('static', filename='images/gallery/prayer.jpg') }}">
-        <img src="{{ url_for('static', filename='images/gallery/prayer.jpg') }}" alt="Men in prayer, native attire, natural light">
-        <span class="gallery__caption">Prayer</span>
-      </div>
-      <div class="gallery__item gallery__item--full" data-lightbox="{{ url_for('static', filename='images/gallery/multigenerational.jpg') }}">
-        <img src="{{ url_for('static', filename='images/gallery/multigenerational.jpg') }}" alt="Three generations of African men standing together, golden hour">
-        <span class="gallery__caption">Legacy</span>
-      </div>
-      <div class="gallery__item gallery__item--wide" data-lightbox="{{ url_for('static', filename='images/gallery/leadership.jpg') }}">
-        <img src="{{ url_for('static', filename='images/gallery/leadership.jpg') }}" alt="A man addressing a small gathering, senator wear, natural light">
-        <span class="gallery__caption">Leadership</span>
-      </div>
-      <div class="gallery__item gallery__item--tall" data-lightbox="{{ url_for('static', filename='images/gallery/ceremony.jpg') }}">
-        <img src="{{ url_for('static', filename='images/gallery/ceremony.jpg') }}" alt="A formation ceremony, agbada, gold accent lighting">
-        <span class="gallery__caption">Ceremony</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================= THE GATHERING COLLATERAL SYSTEM ============================= -->
-<!-- IMAGES: flat-lay / mockup photography of the printed and digital
-     collateral system produced for The Gathering 2026. -->
-<section class="band band--navy2">
-  <div class="wrap">
-    <div class="head head--center" data-reveal>
-      <span class="kicker kicker--center">Visual Experience</span>
-      <h2>The Gathering 2026: Collateral System</h2>
-      <p class="lede" style="margin-inline:auto;">Every touchpoint should feel like entering an institution. Not attending an event.</p>
-    </div>
-    <div class="gallery" data-reveal>
-      <div class="gallery__item gallery__item--tall" data-lightbox="{{ url_for('static', filename='images/gallery/collateral-flyer.jpg') }}">
-        <img src="{{ url_for('static', filename='images/gallery/collateral-flyer.jpg') }}" alt="Main event flyer, A4 portrait, THE GATHERING 2026, THE WEIGHT OF A MAN">
-        <span class="gallery__caption">Main Event Flyer</span>
-      </div>
-      <div class="gallery__item gallery__item--sq" data-lightbox="{{ url_for('static', filename='images/gallery/collateral-instagram.jpg') }}">
-        <img src="{{ url_for('static', filename='images/gallery/collateral-instagram.jpg') }}" alt="Instagram square post for The Gathering 2026">
-        <span class="gallery__caption">Instagram Post</span>
-      </div>
-      <div class="gallery__item gallery__item--sq" data-lightbox="{{ url_for('static', filename='images/gallery/collateral-story.jpg') }}">
-        <img src="{{ url_for('static', filename='images/gallery/collateral-story.jpg') }}" alt="Instagram story for The Gathering 2026">
-        <span class="gallery__caption">Instagram Story</span>
-      </div>
-      <div class="gallery__item gallery__item--wide" data-lightbox="{{ url_for('static', filename='images/gallery/collateral-quote-card.jpg') }}">
-        <img src="{{ url_for('static', filename='images/gallery/collateral-quote-card.jpg') }}" alt="Quote card template: A man who carries purpose will never be crushed by pressure">
-        <span class="gallery__caption">Quote Card</span>
-      </div>
-      <div class="gallery__item gallery__item--sq" data-lightbox="{{ url_for('static', filename='images/gallery/collateral-lanyard.jpg') }}">
-        <img src="{{ url_for('static', filename='images/gallery/collateral-lanyard.jpg') }}" alt="Lanyard and participant name badge">
-        <span class="gallery__caption">Lanyard &amp; Badge</span>
-      </div>
-      <div class="gallery__item gallery__item--sq" data-lightbox="{{ url_for('static', filename='images/gallery/collateral-experience-guide.jpg') }}">
-        <img src="{{ url_for('static', filename='images/gallery/collateral-experience-guide.jpg') }}" alt="The ARÁKÙNRIN Experience Guide book, heavy paper stock">
-        <span class="gallery__caption">The Experience Guide</span>
-      </div>
-      <div class="gallery__item gallery__item--wide" data-lightbox="{{ url_for('static', filename='images/gallery/collateral-legacy-one-card.jpg') }}">
-        <img src="{{ url_for('static', filename='images/gallery/collateral-legacy-one-card.jpg') }}" alt="Legacy One partnership card: Partnering today, building tomorrow">
-        <span class="gallery__caption">Legacy One Partnership Card</span>
-      </div>
-      <div class="gallery__item gallery__item--tall" data-lightbox="{{ url_for('static', filename='images/gallery/collateral-commitment-card.jpg') }}">
-        <img src="{{ url_for('static', filename='images/gallery/collateral-commitment-card.jpg') }}" alt="My Commitment card: I commit to a life of purpose, integrity and impact">
-        <span class="gallery__caption">My Commitment Card</span>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- ============================= COLOUR PALETTE ============================= -->
 <section class="band">
   <div class="wrap">
     <div class="head" data-reveal>
       <span class="kicker">Colour Palette</span>
-      <h2>Based on the Deck, Logo, and Campaign</h2>
+      <h2>Based on the Existing Deck, Logo and Campaign</h2>
     </div>
     <div class="swatches" data-reveal>
       <div class="swatch" style="background:#07182E;"><span class="swatch__name">Primary Navy</span><span class="swatch__hex">#07182E</span></div>
