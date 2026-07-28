@@ -117,13 +117,10 @@ def configure_context_processors(app):
         navigation = {
             "primary": [
                 {"label": "Home", "url": "/", "endpoint": "public.home"},
-                {"label": "About", "url": "/about", "endpoint": "public.about"},
                 {"label": "Our Work", "url": "/our-work", "endpoint": "public.our_work"},
                 {"label": "The Gathering", "url": "/the-gathering", "endpoint": "public.gathering"},
-                {"label": "Gallery", "url": "/gallery", "endpoint": "public.gallery"},
-                {"label": "Partners", "url": "/partners", "endpoint": "public.partners"},
             ],
-            "cta": {"label": "Enquire", "url": "/contact", "endpoint": "public.contact"},
+            "cta": {"label": "Contact", "url": "/contact", "endpoint": "public.contact"},
         }
         return {"navigation": navigation}
 
