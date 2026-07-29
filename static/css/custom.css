@@ -285,6 +285,7 @@ p + p { margin-top: 1.2rem; }
 }
 .nav__mark { display: flex; align-items: center; gap: 0.8rem; }
 .nav__mark svg { color: var(--gold); width: 22px; height: 25px; }
+.nav__logo { height: 32px; width: auto; display: block; }
 .nav__word { font-family: var(--display); font-size: 1.15rem; letter-spacing: 0.1em; color: var(--ivory); font-weight: 600; }
 .nav__sub { display: block; font-family: var(--tracked); font-size: 0.62rem; letter-spacing: 0.16em; color: var(--gold); text-transform: uppercase; margin-top: 0.15rem; }
 
