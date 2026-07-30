@@ -283,7 +283,7 @@ p + p { margin-top: 1.2rem; }
   justify-content: space-between;
   gap: 1.5rem;
 }
-.nav__mark { display: flex; align-items: center; gap: 0.8rem; }
+.nav__mark { display: flex; align-items: center; gap: 0.3rem; }
 .nav__mark svg { color: var(--gold); width: 22px; height: 25px; }
 .nav__logo { height: 64px; width: auto; display: block; }
 .nav__word { font-family: var(--display); font-size: 1.15rem; letter-spacing: 0.1em; color: var(--ivory); font-weight: 600; }
@@ -654,8 +654,8 @@ p + p { margin-top: 1.2rem; }
 }
 .stat__label { font-family: var(--tracked); font-size: 0.78rem; letter-spacing: 0.12em; color: var(--gold); text-transform: uppercase; margin-bottom: 0.7rem; }
 .stat__desc { font-size: 0.92rem; color: var(--ivory-70); max-width: 220px; }
-@media (max-width: 900px) { .stats { grid-template-columns: repeat(2, 1fr); } .stat { min-height: 170px; } }
-@media (max-width: 560px) { .stats { grid-template-columns: 1fr; } .stat { min-height: unset; } }
+@media (max-width: 760px) { .stats { grid-template-columns: repeat(2, 1fr); } .stat { min-height: 170px; } }
+@media (max-width: 460px) { .stats { grid-template-columns: 1fr; } .stat { min-height: unset; } }
 
 /* =========================================
    RIPPLE CHAIN: sequential cause > effect progression
