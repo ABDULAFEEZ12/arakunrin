@@ -567,11 +567,11 @@ p + p { margin-top: 1.2rem; }
   display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: clamp(2rem, 5vw, 4rem);
   padding-bottom: clamp(2.5rem, 5vw, 4rem);
 }
-.footer__mark { display: flex; align-items: center; gap: 0.7rem; margin-bottom: 1.2rem; }
+.footer__mark { display: flex; align-items: center; gap: 0.001rem; margin-bottom: 1.2rem; }
 .footer__mark svg { color: var(--gold); width: 20px; height: 23px; }
-.footer__logo { height: 32px; width: auto; display: block; }
-.footer__word { font-family: var(--display); font-size: 1.2rem; letter-spacing: 0.08em; color: var(--ivory); }
-.footer__tagline { font-family: var(--tracked); font-size: 0.75rem; letter-spacing: 0.1em; color: var(--gold); text-transform: uppercase; margin-bottom: 1rem; }
+.footer__logo { height: 88px; width: auto; display: block; }
+.footer__word { font-family: var(--display); font-size: 1.2rem; letter-spacing: 0.08em; color: var(--ivory); font-weight: 600; display: block; }
+.footer__tagline { display: block; font-family: var(--tracked); font-size: 0.7rem; letter-spacing: 0.1em; color: var(--gold); text-transform: uppercase; margin-top: 0.15rem; }
 .footer__desc { max-width: 300px; color: var(--ivory-50); font-size: 0.92rem; }
 
 .footer h4 { font-family: var(--tracked); font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ivory); margin-bottom: 1.3rem; font-weight: 400; }
