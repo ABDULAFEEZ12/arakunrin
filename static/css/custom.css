@@ -277,7 +277,8 @@ p + p { margin-top: 1.2rem; }
 .nav__row {
   max-width: 1320px;
   margin: 0 auto;
-  padding: 0 var(--gutter);
+  padding-left: clamp(1rem, 2vw, 1.5rem);
+  padding-right: var(--gutter);
   display: flex;
   align-items: center;
   justify-content: space-between;
