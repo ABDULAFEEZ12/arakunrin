@@ -57,6 +57,16 @@ def gathering():
     return render_template("public/gathering.html", seo=seo)
 
 
+@public_bp.route("/academy")
+def academy():
+    seo = _seo(
+        "public.academy",
+        "Academy | ARÁKÙNRIN",
+        "The ARÁKÙNRIN Academy is coming soon.",
+    )
+    return render_template("public/academy.html", seo=seo)
+
+
 @public_bp.route("/gallery")
 def gallery():
     seo = _seo(
@@ -143,6 +153,7 @@ def sitemap():
         {"loc": url_for("public.about", _external=True), "priority": "0.9"},
         {"loc": url_for("public.our_work", _external=True), "priority": "0.9"},
         {"loc": url_for("public.gathering", _external=True), "priority": "0.9"},
+        {"loc": url_for("public.academy", _external=True), "priority": "0.4"},
         {"loc": url_for("public.gallery", _external=True), "priority": "0.7"},
         {"loc": url_for("public.partners", _external=True), "priority": "0.6"},
         {"loc": url_for("public.contact", _external=True), "priority": "0.7"},
