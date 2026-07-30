@@ -283,7 +283,7 @@ p + p { margin-top: 1.2rem; }
   justify-content: space-between;
   gap: 1.5rem;
 }
-.nav__mark { display: flex; align-items: center; gap: 0.15rem; }
+.nav__mark { display: flex; align-items: center; gap: 0.05rem; }
 .nav__mark svg { color: var(--gold); width: 22px; height: 25px; }
 .nav__logo { height: 64px; width: auto; display: block; }
 .nav__word { font-family: var(--display); font-size: 1.15rem; letter-spacing: 0.1em; color: var(--ivory); font-weight: 600; }
