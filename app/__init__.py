@@ -119,6 +119,7 @@ def configure_context_processors(app):
                 {"label": "Home", "url": "/", "endpoint": "public.home"},
                 {"label": "Our Work", "url": "/our-work", "endpoint": "public.our_work"},
                 {"label": "The Gathering", "url": "/the-gathering", "endpoint": "public.gathering"},
+                {"label": "Academy", "url": "/academy", "endpoint": "public.academy"},
             ],
             "cta": {"label": "Contact", "url": "/contact", "endpoint": "public.contact"},
         }
