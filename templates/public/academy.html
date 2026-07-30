@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}{{ seo.title }}{% endblock %}
+{% block content %}
+
+<section class="band text-center" style="min-height:70vh; display:flex; align-items:center; padding-top: clamp(2.5rem, 5vw, 3.5rem);">
+  <div class="wrap">
+    <span class="kicker kicker--center">Academy</span>
+    <h1 data-reveal>Coming Soon.</h1>
+    <p class="lede mt-2" style="margin-inline:auto;" data-reveal>The ARÁKÙNRIN Academy is in formation. We will announce it here when it opens.</p>
+    <div class="cta__actions mt-3" data-reveal style="justify-content:center;">
+      <a href="{{ url_for('public.home') }}" class="btn btn--gold">Return Home <span class="btn__arrow">&rarr;</span></a>
+      <a href="{{ url_for('public.contact') }}" class="btn btn--line">Get Notified</a>
+    </div>
+  </div>
+</section>
+
+{% include 'components/cta_section.html' %}
+
+{% endblock %}
