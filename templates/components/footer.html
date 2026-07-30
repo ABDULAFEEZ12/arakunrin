@@ -5,9 +5,11 @@
       <div>
         <a href="{{ url_for('public.home') }}" class="footer__mark">
           <img src="{{ url_for('static', filename='images/brand/logo.png') }}" alt="{{ site_name }}" class="footer__logo">
-          <span class="footer__word">{{ site_name }}</span>
+          <span>
+            <span class="footer__word">{{ site_name }}</span>
+            <span class="footer__tagline">{{ site_tagline }}</span>
+          </span>
         </a>
-        <p class="footer__tagline">{{ site_tagline }}</p>
         <p class="footer__desc">Forming Boys. Forging Men. Building Legacies. Africa's premier institution for lifelong male formation.</p>
         <div class="footer__social">
           <a href="#" aria-label="Instagram">IG</a>
